@@ -8,7 +8,7 @@ export function Navbar() {
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="absolute top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-white/5 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-white/5 backdrop-blur-md border-b border-white/10">
       {/* Logo */}
       <div className="flex items-center">
         <Image

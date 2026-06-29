@@ -16,7 +16,7 @@ const SLIDE_IMAGES = ["/hero-1.png", "/hero-2.png", "/hero-3.png"];
 export function HeroSlider() {
   const { t } = useLanguage();
   const autoplay = useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
