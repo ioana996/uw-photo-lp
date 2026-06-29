@@ -11,8 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { useLanguage } from "@/components/language-provider";
 
-// Replace these with real photos (e.g. /hero-1.jpg) when available
-const SLIDE_IMAGES = ["/hero-1.svg", "/hero-2.svg", "/hero-3.svg"];
+const SLIDE_IMAGES = ["/hero-1.png", "/hero-2.png", "/hero-3.png"];
 
 export function HeroSlider() {
   const { t } = useLanguage();
