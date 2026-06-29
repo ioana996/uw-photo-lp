@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import {
@@ -15,6 +15,9 @@ const SLIDE_IMAGES = ["/hero-1.png", "/hero-2.png", "/hero-3.png"];
 
 export function HeroSlider() {
   const { t } = useLanguage();
+  const autoplay = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnMouseEnter: true })
+  );
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -37,13 +40,7 @@ export function HeroSlider() {
       <Carousel
         setApi={setApi}
         opts={{ loop: true }}
-        plugins={[
-          Autoplay({
-            delay: 5000,
-            stopOnInteraction: true,
-            stopOnMouseEnter: true,
-          }),
-        ]}
+        plugins={[autoplay.current]}
         className="h-full w-full"
       >
         <CarouselContent className="h-full ml-0">
