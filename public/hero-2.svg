@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062a38"/>
+      <stop offset="100%" stop-color="#1a7a6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g2)"/>
+  <ellipse cx="960" cy="900" rx="900" ry="220" fill="#0a4f46" opacity="0.5"/>
+  <text x="960" y="560" text-anchor="middle" font-family="Georgia,serif" font-size="48" fill="white" opacity="0.15">hero-2.svg — replace with real photo</text>
+</svg>
