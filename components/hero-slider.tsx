@@ -46,11 +46,11 @@ export function HeroSlider() {
         ]}
         className="h-full w-full"
       >
-        <CarouselContent className="h-full -ml-0">
+        <CarouselContent className="h-full ml-0">
           {SLIDE_IMAGES.map((src, i) => {
             const slide = t.hero.slides[i];
             return (
-              <CarouselItem key={src} className="h-full pl-0 relative">
+              <CarouselItem key={src} className="h-full pl-0 relative overflow-hidden">
                 {/* Background image */}
                 <Image
                   src={src}
