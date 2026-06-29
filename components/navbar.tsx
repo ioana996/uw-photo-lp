@@ -12,7 +12,7 @@ export function Navbar() {
       {/* Logo */}
       <div className="flex items-center">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt={t.nav.logoAlt}
           width={140}
           height={40}
