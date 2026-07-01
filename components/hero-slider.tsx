@@ -51,7 +51,7 @@ export function HeroSlider({ images }: { images: string[] }) {
                   src={src}
                   alt={slide.title}
                   fill
-                  priority={i === 0}
+                  priority
                   className="object-cover"
                   sizes="100vw"
                 />
