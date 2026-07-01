@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/language-provider";
 
@@ -7,6 +7,12 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -21,12 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} h-full antialiased`}>
-      <head>
-        {/* Adobe Fonts — Aktiv Grotesk Extended Bold */}
-        {/* Replace YOUR_KIT_ID with the kit ID from fonts.adobe.com */}
-        <link rel="stylesheet" href="https://use.typekit.net/YOUR_KIT_ID.css" />
-      </head>
+    <html lang="en" className={`${dmSans.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-black">
         <LanguageProvider>{children}</LanguageProvider>
       </body>
