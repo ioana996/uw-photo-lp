@@ -5,7 +5,7 @@ import { useLanguage } from "@/components/language-provider";
 const SOCIAL_LINKS = [
   {
     key: "linkedin" as const,
-    href: "#",
+    href: "https://www.linkedin.com/in/alicia-chanavat/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const SOCIAL_LINKS = [
   },
   {
     key: "instagram" as const,
-    href: "#",
+    href: "https://www.instagram.com/alilexplo/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const SOCIAL_LINKS = [
   },
   {
     key: "website" as const,
-    href: "#",
+    href: "mailto:info.accstudio@gmail.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +48,8 @@ const SOCIAL_LINKS = [
         className="w-5 h-5"
         aria-hidden="true"
       >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
       </svg>
     ),
   },
