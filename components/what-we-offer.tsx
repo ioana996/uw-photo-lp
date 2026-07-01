@@ -9,7 +9,7 @@ export function WhatWeOffer({ images }: { images: string[] }) {
         {images.map((src, i) => (
           <div
             key={src}
-            className="relative aspect-[4/3] overflow-hidden rounded-2xl"
+            className="relative aspect-[3/4] overflow-hidden rounded-2xl"
           >
             <Image
               src={src}
