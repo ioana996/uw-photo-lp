@@ -49,7 +49,7 @@ export function Navbar() {
           <Link
             key={href}
             href={href}
-            className={`text-sm font-medium tracking-wide transition-colors hover:text-white ${
+            className={`text-base font-medium tracking-wide transition-colors hover:text-white ${
               pathname === href
                 ? "text-white underline underline-offset-4"
                 : "text-white/60"
