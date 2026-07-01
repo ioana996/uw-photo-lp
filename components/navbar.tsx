@@ -34,7 +34,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
-      <div className="grid grid-cols-3 items-center px-6 md:px-12 py-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 items-center px-6 md:px-12 py-4">
         {/* Logo — left */}
         <div>
           <Link href="/" onClick={() => setMobileOpen(false)}>
