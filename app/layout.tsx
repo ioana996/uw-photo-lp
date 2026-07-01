@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/language-provider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
+    <html lang="en" className={`${dmSans.variable} h-full antialiased`}>
+      <head>
+        {/* Adobe Fonts — Aktiv Grotesk Extended Bold */}
+        {/* Replace YOUR_KIT_ID with the kit ID from fonts.adobe.com */}
+        <link rel="stylesheet" href="https://use.typekit.net/YOUR_KIT_ID.css" />
+      </head>
       <body className="min-h-full flex flex-col bg-black">
         <LanguageProvider>{children}</LanguageProvider>
       </body>
