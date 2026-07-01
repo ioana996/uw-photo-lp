@@ -27,8 +27,8 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <HeroSlider images={heroImages} />
-        <WhatWeOffer images={offerImages} />
         <About portrait={portrait} />
+        <WhatWeOffer images={offerImages} />
       </main>
       <Footer />
     </>
