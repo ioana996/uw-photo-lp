@@ -4,6 +4,8 @@ export const dictionaries = {
   en: {
     nav: {
       logoAlt: "Alicia Underwater logo",
+      home: "Home",
+      gallery: "Gallery",
     },
     hero: {
       slides: [
@@ -47,6 +49,8 @@ export const dictionaries = {
   es: {
     nav: {
       logoAlt: "Logo de Alicia Underwater",
+      home: "Inicio",
+      gallery: "Galería",
     },
     hero: {
       slides: [
@@ -90,7 +94,7 @@ export const dictionaries = {
 } as const;
 
 export type Dictionary = {
-  nav: { logoAlt: string };
+  nav: { logoAlt: string; home: string; gallery: string };
   hero: { slides: ReadonlyArray<{ title: string; description: string }> };
   about: {
     label: string;
