@@ -24,6 +24,9 @@ export function Navbar() {
 
   const navLinks = [
     { label: t.nav.home, href: "/" },
+    { label: t.nav.about, href: "/#about" },
+    { label: t.nav.offers, href: "/#what-we-offer" },
+    { label: t.nav.contact, href: "/#contact" },
     { label: t.nav.gallery, href: "/gallery" },
   ];
 
