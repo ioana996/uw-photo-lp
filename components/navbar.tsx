@@ -67,7 +67,7 @@ export function Navbar() {
             {lang.toUpperCase()}
             <ChevronDownIcon className="w-3.5 h-3.5 opacity-60" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="min-w-[80px] bg-black/90 border-white/10">
+          <DropdownMenuContent align="end" className="min-w-[80px] bg-black/80 backdrop-blur-md border-white/10">
             {LANGUAGES.map(({ value, label }) => (
               <DropdownMenuItem
                 key={value}
