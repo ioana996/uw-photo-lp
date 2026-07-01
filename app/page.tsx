@@ -4,6 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { HeroSlider } from "@/components/hero-slider";
 import { WhatWeOffer } from "@/components/what-we-offer";
 import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
 const EXTENSIONS = ["jpg", "jpeg", "png", "webp", "avif"];
@@ -29,6 +30,7 @@ export default function Home() {
         <HeroSlider images={heroImages} />
         <About portrait={portrait} />
         <WhatWeOffer images={offerImages} />
+        <Contact />
       </main>
       <Footer />
     </>

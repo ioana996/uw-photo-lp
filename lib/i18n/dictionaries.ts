@@ -36,6 +36,23 @@ export const dictionaries = {
       ],
       location: "Costa Brava · Barcelona",
     },
+    contact: {
+      label: "Contact",
+      heading: "Get in touch",
+      description: "Whether you're a photographer, a diver, or simply curious — reach out and let's talk about your next underwater adventure.",
+      location: "Costa Brava · Barcelona",
+      fields: {
+        name: "Name",
+        email: "Email",
+        message: "Message",
+        namePlaceholder: "Your name",
+        emailPlaceholder: "your@email.com",
+        messagePlaceholder: "Tell me about yourself and what you're looking for...",
+        submit: "Send message",
+      },
+      success: "Thank you! I'll get back to you soon.",
+      error: "Something went wrong. Please try again.",
+    },
     footer: {
       links: {
         linkedin: "LinkedIn",
@@ -81,6 +98,23 @@ export const dictionaries = {
       ],
       location: "Costa Brava · Barcelona",
     },
+    contact: {
+      label: "Contacto",
+      heading: "Ponte en contacto",
+      description: "Seas fotógrafo, buceador o simplemente curioso — escríbeme y hablemos de tu próxima aventura submarina.",
+      location: "Costa Brava · Barcelona",
+      fields: {
+        name: "Nombre",
+        email: "Correo electrónico",
+        message: "Mensaje",
+        namePlaceholder: "Tu nombre",
+        emailPlaceholder: "tu@correo.com",
+        messagePlaceholder: "Cuéntame sobre ti y qué estás buscando...",
+        submit: "Enviar mensaje",
+      },
+      success: "¡Gracias! Te responderé pronto.",
+      error: "Algo salió mal. Por favor inténtalo de nuevo.",
+    },
     footer: {
       links: {
         linkedin: "LinkedIn",
@@ -101,6 +135,23 @@ export type Dictionary = {
     heading: string;
     paragraphs: ReadonlyArray<string>;
     location: string;
+  };
+  contact: {
+    label: string;
+    heading: string;
+    description: string;
+    location: string;
+    fields: {
+      name: string;
+      email: string;
+      message: string;
+      namePlaceholder: string;
+      emailPlaceholder: string;
+      messagePlaceholder: string;
+      submit: string;
+    };
+    success: string;
+    error: string;
   };
   footer: {
     links: { linkedin: string; instagram: string; website: string };
