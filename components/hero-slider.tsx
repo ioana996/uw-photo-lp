@@ -11,9 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { useLanguage } from "@/components/language-provider";
 
-const SLIDE_IMAGES = ["/hero-1.png", "/hero-2.png", "/hero-3.png"];
-
-export function HeroSlider() {
+export function HeroSlider({ images }: { images: string[] }) {
   const { t } = useLanguage();
   const autoplay = useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: false })
@@ -44,7 +42,7 @@ export function HeroSlider() {
         className="h-full w-full"
       >
         <CarouselContent className="h-full ml-0">
-          {SLIDE_IMAGES.map((src, i) => {
+          {images.map((src, i) => {
             const slide = t.hero.slides[i];
             return (
               <CarouselItem key={src} className="h-full pl-0 relative overflow-hidden">
@@ -78,7 +76,7 @@ export function HeroSlider() {
 
       {/* Dot indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10">
-        {SLIDE_IMAGES.map((_, i) => (
+        {images.map((_, i) => (
           <button
             key={i}
             onClick={() => api?.scrollTo(i)}
