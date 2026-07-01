@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function WhatWeOffer({ images }: { images: string[] }) {
   return (
-    <section id="what-we-offer" className="bg-black py-16 px-6 md:px-16">
+    <section id="what-we-offer" className="bg-black pt-24 pb-16 px-6 md:px-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
         {images.map((src, i) => (
           <div
