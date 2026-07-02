@@ -4,7 +4,7 @@ import { useForm } from "@formspree/react";
 import { useLanguage } from "@/components/language-provider";
 
 // Replace YOUR_FORM_ID with the ID from formspree.io (e.g. "xyzabc12")
-const FORMSPREE_ID = "YOUR_FORM_ID";
+const FORMSPREE_ID = "mnjkopaa";
 
 export function Contact() {
   const { t } = useLanguage();
